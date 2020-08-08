@@ -1,5 +1,4 @@
 import random
-import sys
 
 import pygame
 from pygame import *
@@ -147,7 +146,7 @@ def gameloop():
             snake_x = snake_x + velocity_x
             snake_y = snake_y + velocity_y
 
-            if abs(snake_x - food_x) < 10 and abs(snake_y - food_y) < 10:
+            if abs(snake_x - food_x) < 30 and abs(snake_y - food_y) < 30:
 
                 score += 10
 
